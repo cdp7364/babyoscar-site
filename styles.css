@@ -296,3 +296,25 @@ a:hover {
     flex-direction: column;
   }
 }
+.header-logo {
+  height: 40px;
+  width: auto;
+}
+
+.hero-logo {
+  height: 90px;
+  width: auto;
+  margin-bottom: 10px;
+}
+.faculty-photo {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.faculty-image {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
