@@ -1,0 +1,298 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+  background: #f8fafc;
+  line-height: 1.6;
+}
+
+a {
+  color: #5b21b6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: min(1100px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(248, 250, 252, 0.96);
+  border-bottom: 1px solid #e5e7eb;
+  backdrop-filter: blur(8px);
+}
+
+.header-inner,
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.header-logo {
+  height: 42px;
+  width: auto;
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.tagline {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.92rem;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.nav a {
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+.hero {
+  padding: 4rem 0 3rem;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.hero-logo {
+  height: 84px;
+  width: auto;
+  margin-bottom: 0.75rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #6d28d9;
+  margin-bottom: 0.5rem;
+}
+
+.hero h2,
+.section h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.15;
+}
+
+.hero h2 {
+  font-size: 2.7rem;
+}
+
+.section {
+  padding: 3.5rem 0;
+}
+
+.section.alt {
+  background: #ffffff;
+}
+
+.section-intro {
+  max-width: 800px;
+  color: #4b5563;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 1.5rem;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 0.85rem 1.25rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.button:hover {
+  text-decoration: none;
+}
+
+.button.primary {
+  background: #6d28d9;
+  color: white;
+}
+
+.button.primary:hover {
+  background: #5b21b6;
+}
+
+.button.secondary {
+  background: white;
+  color: #374151;
+  border: 1px solid #d1d5db;
+}
+
+.button.light {
+  background: white;
+  color: #5b21b6;
+}
+
+.course-card {
+  background: linear-gradient(135deg, #6d28d9, #8b5cf6);
+  color: white;
+  padding: 1.75rem;
+  border-radius: 24px;
+  box-shadow: 0 14px 30px rgba(76, 29, 149, 0.2);
+}
+
+.card-label {
+  margin-top: 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.course-card h3 {
+  margin: 0.3rem 0 0.6rem;
+  font-size: 2rem;
+}
+
+.course-date {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.status {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  margin-right: 0.5rem;
+}
+
+.cards {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.cards.two-col {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.cards.one-col {
+  grid-template-columns: 1fr;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 22px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.05);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.top-space {
+  margin-top: 1.5rem;
+}
+
+.course-listing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.password-card {
+  max-width: 700px;
+}
+
+.password-row {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.password-row input {
+  flex: 1;
+  padding: 0.85rem 1rem;
+  border-radius: 14px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+}
+
+.error {
+  color: #b91c1c;
+  margin-top: 0.75rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.site-footer {
+  border-top: 1px solid #e5e7eb;
+  background: white;
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+@media (max-width: 900px) {
+  .hero-grid,
+  .cards.two-col,
+  .course-listing,
+  .header-inner,
+  .footer-inner {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero h2 {
+    font-size: 2.1rem;
+  }
+
+  .nav {
+    gap: 0.75rem;
+  }
+
+  .password-row {
+    flex-direction: column;
+  }
+}
