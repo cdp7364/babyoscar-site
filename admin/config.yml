@@ -1,0 +1,43 @@
+backend:
+  name: github
+  repo: cdp7364/babyoscar-site
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "courses"
+    label: "Courses"
+    files:
+      - file: "courses.json"
+        label: "Course List"
+        name: "course_list"
+        fields:
+          - label: "Courses"
+            name: "courses"
+            widget: "list"
+            fields:
+              - { label: "City", name: "city", widget: "string" }
+              - { label: "Dates", name: "dates", widget: "string" }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Status", name: "status", widget: "string" }
+              - { label: "Format", name: "format", widget: "string" }
+              - { label: "Registration Link", name: "registrationLink", widget: "string", required: false }
+
+  - name: "publications"
+    label: "Publications"
+    files:
+      - file: "publications.json"
+        label: "Publication List"
+        name: "publication_list"
+        fields:
+          - label: "Publications"
+            name: "publications"
+            widget: "list"
+            fields:
+              - { label: "Authors", name: "authors", widget: "string" }
+              - { label: "Year", name: "year", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Journal", name: "journal", widget: "string" }
+              - { label: "Link", name: "link", widget: "string", required: false }
